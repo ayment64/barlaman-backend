@@ -16,6 +16,7 @@ var PolygoneSchema = new Schema({
     owner_adress: String,
     area_of_terrain: Number,
     area_of_terrain_unit: String,
+    type: String,
     user: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'user'

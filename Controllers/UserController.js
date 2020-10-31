@@ -10,7 +10,8 @@ exports.add_a_user = async function (req, res) {
         lastname: req.body.lastname,
         cin: req.body.cin,
         imageurl: req.body.imageurl,
-        lastLogin: req.body.lastLogin
+        lastLogin: req.body.lastLogin,
+        isAdmin: req.body.isAdmin
     });
     try {
         const newUser = await user.save();
