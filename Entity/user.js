@@ -20,6 +20,10 @@ var UserSchema = new Schema({
         type: Date,
         default: Date.now,
     },
+    emplyees: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'user'
+    }],
     lastLogin: Date,
     firstname: String,
     lastname: String,
